@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+}
+
+body{
+    background: url("./imgs/background.jpg") no-repeat center center/ cover;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-app{
+    background-color: antiquewhite;
+    width: 50%;
+    min-height: 500px;
+    border: 5px solid black;
+    border-radius: 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.contenedor-tareas{
+    width: 80%;
+    min-height: 300px;
+}
+
+#barra-texto{
+    width: 80%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#boton-crear{
+    background-color: rgb(150, 150, 226);
+    color: white;
+    border-radius: 10px;
+    font-size: large;
+    padding: 10px;
+}
+
+.card-tarea{
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 10px 0;
+    height: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.texto-tarea{
+    flex-basis: 70%;
+}
+
+.contenedor-botones{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    flex-basis: 30%;
+}
+
+.completada{
+    background-color: black;
+    color: white;
+}
+.completada .texto-tarea{
+    text-decoration:line-through;
+}
+
+.pendiente{
+    background-color: rgb(74, 195, 219);
+}
